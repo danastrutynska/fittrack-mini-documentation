@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Product Overview](#product-overview-and-target-audience)
-- [User Guide](#user-guide-for-fittrack-mini)
+- [User Guide](#user-guide)
 - [API Documentation](#api-documentation)
 
 ## Product overview and target audience
