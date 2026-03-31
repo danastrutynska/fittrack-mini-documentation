@@ -1,27 +1,27 @@
 # fittrack-mini-documentation
-# Table of contents 
-- Product overview and target audience
-- User Guide for FitTrack Mini
-- API Documentation
+## Table of Contents
+- [Product Overview](#product-overview-and-target-audience)
+- [User Guide](#user-guide-for-fittrack-mini)
+- [API Documentation](#api-documentation)
 
-# Product overview and target audience
+## Product overview and target audience
 FitTrack Mini is a mobile fitness tracking application designed to help users monitor their daily activity, set goals, and track progress.
 
-## Key features include:
+### Key features include:
 - Step tracking
 - Workout logging
 - Goal management
 - Progress statistics
 - Notifications and reminders
 
-## Target Audience:
+### Target Audience:
 - General users interested in fitness tracking
 - Beginner users looking for simple health monitoring tools
 
-# User guide for FitTrack Mini
-## Introduction
+## User guide for FitTrack Mini
+### Introduction
 FitTrack Mini is a simple application for your fitness and health journey. With its versatile set of features, you can track your daily step number, record workouts, set your own personal goals, review statistics and progress, and receive activity reminders. 
-## Getting Started
+### Getting Started
 ### Installing the application
 Go to App Store. 
 Type FitTrack Mini into the search bar.
@@ -42,7 +42,7 @@ Tap the Log in button.
 Once you are logged in, you will be redirected to the app’s main screen. 
 
 
-## Tracking Daily Steps
+### Tracking Daily Steps
 ### How to track daily steps
 On the main screen, tap Menu.
 Select Steps at the top of the list. 
@@ -55,7 +55,7 @@ Select Steps at the top of the list.
 Tap View Daily Progress link.
 Once selected, the app generates a chart showing the number of daily steps per hour throughout a day. 
 
-## Logging workouts
+### Logging workouts
 ### Add a workout
 On the main screen, tap Menu.
 Select Workouts from the menu. 
@@ -63,7 +63,7 @@ Tap Log a Workout link.
 Select Workout Type from the list (e.g., jogging, yoga, power lifting).
 Enter Duration into the field in minutes (e.g., 45). 
 The app automatically calculates calories burned and adds them to daily statistics. 
-## Setting goals
+### Setting goals
 ### How to set up daily or weekly goals
 On the main screen, tap Menu.
 Select Goals from the menu. 
@@ -82,14 +82,14 @@ Tap Goal Name on the list to view its details.
 The app opens Goal Details screen with a progress bar indicating goal completion. 
 
 
-## Viewing statistics
+### Viewing statistics
 ### How to view statistics
 On the main screen, tap Menu
 Select Statistics from the menu. 
 Select a category from the list (e.g., Steps)
 Select a duration (e.g., week)
 The app generates a chart showing the daily steps taken throughout the selected duration and the average daily steps.  
-## Notifications & reminders
+### Notifications & reminders
 ### How to turn on notifications
 On the main screen, tap Settings.
 Select Reminders.
@@ -103,15 +103,15 @@ Toggle the switch next to Allow Notifications.
 The app will send notifications to your home screen based on your preferred selection.
 
 
-## Troubleshooting
+### Troubleshooting
 ### What to do if the step counting does not work.
 On the main screen, tap Settings.
 Select Access.
 Toggle the switch next to Allow Motion Sensors Access. 
 Make sure the access is also enabled in your phone settings. 
-# API Documentation for FitTrack Mini
+## API Documentation for FitTrack Mini
 
-## Create a Goal 
+### Create a Goal 
 **Endpoint**
 `POST /goals` 
 **Description**
@@ -134,7 +134,7 @@ Make sure the access is also enabled in your phone settings.
 "duration": 60
 }
 ```
-## Get All Goals
+### Get All Goals
 **Endpoint**
 `GET /goals`
 **Description** 
@@ -155,7 +155,7 @@ Make sure the access is also enabled in your phone settings.
 }
 ]
 ```
-## Update a Goal 
+### Update a Goal 
 **Endpoint**
 `PUT /goals/{id}`
 **Description** 
