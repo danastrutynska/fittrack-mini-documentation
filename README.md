@@ -1,5 +1,5 @@
 # fittrack-mini-documentation
-#Table of contents 
+# Table of contents 
 - Product overview and target audience
 - User Guide for FitTrack Mini
 - API Documentation
@@ -112,11 +112,11 @@ Make sure the access is also enabled in your phone settings.
 # API Documentation for FitTrack Mini
 
 ## Create a Goal 
-#### Endpoint
+**Endpoint**
 POST /goals 
-#### Description
+**Description**
 Creates a new goal 
-#### Request Body
+**Request Body**
 ```json
 { 
 "name": "burn 200 calories",
@@ -124,7 +124,7 @@ Creates a new goal
 "duration": 60
  }
 ```
-#### Response
+**Response**
 ```json
 201 Created 
 { 
@@ -135,11 +135,11 @@ Creates a new goal
 }
 ```
 ## Get All Goals
-#### Endpoint 
+**Endpoint**
 GET /goals
-#### Description 
+**Description** 
 Returns a list of all goals
-#### Response
+**Response**
 ```json
 200 OK
 [
@@ -156,16 +156,16 @@ Returns a list of all goals
 ]
 ```
 ## Update a Goal 
-#### Endpoint 
+**Endpoint**
 PUT /goals/{id}
-#### Description 
+**Description** 
 Updates an existing goal 
-#### Request Body 
+**Request Body** 
 |Field|Type|Required|Description|
 |name|string|yes|name of the goal|
 |target|number|yes|target in calories or steps|
 |duration|string|yes|goal duration|
-#### Example Request 
+**Example Request** 
 ```json
 { 
 "name": "power lifting",
@@ -173,7 +173,7 @@ Updates an existing goal
 "duration": "weekly"
  }
 ```
-#### Response 
+**Response** 
 ```json
 200 OK
 { 
@@ -183,7 +183,7 @@ Updates an existing goal
 "duration": "weekly"
 }
 ```
-#### Possible Errors
+**Possible Errors**
 |Code|Description|
 |400|Invalid request data|
 |404|Goal was not found|
