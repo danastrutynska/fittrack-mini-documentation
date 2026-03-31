@@ -18,9 +18,10 @@ FitTrack Mini is a mobile fitness tracking application designed to help users mo
 - General users interested in fitness tracking
 - Beginner users looking for simple health monitoring tools
 
-## User guide for FitTrack Mini
+## User Guide
 ### Introduction
 FitTrack Mini is a simple application for your fitness and health journey. With its versatile set of features, you can track your daily step number, record workouts, set your own personal goals, review statistics and progress, and receive activity reminders. 
+
 ### Getting Started
 ### Installing the application
 Go to App Store. 
@@ -41,14 +42,12 @@ On the main page, fill out the email and password fields.
 Tap the Log in button.
 Once you are logged in, you will be redirected to the app’s main screen. 
 
-
 ### Tracking Daily Steps
 ### How to track daily steps
 On the main screen, tap Menu.
 Select Steps at the top of the list. 
 Toggle the switch next to Track daily steps to enable tracking.
 Once enabled, the app starts tracking your daily steps automatically. 
-
 ### How to track progress of daily steps
 On the main screen, tap Menu.
 Select Steps at the top of the list. 
@@ -63,6 +62,7 @@ Tap Log a Workout link.
 Select Workout Type from the list (e.g., jogging, yoga, power lifting).
 Enter Duration into the field in minutes (e.g., 45). 
 The app automatically calculates calories burned and adds them to daily statistics. 
+
 ### Setting goals
 ### How to set up daily or weekly goals
 On the main screen, tap Menu.
@@ -81,7 +81,6 @@ Tap Current Goals.
 Tap Goal Name on the list to view its details. 
 The app opens Goal Details screen with a progress bar indicating goal completion. 
 
-
 ### Viewing statistics
 ### How to view statistics
 On the main screen, tap Menu
@@ -89,6 +88,7 @@ Select Statistics from the menu.
 Select a category from the list (e.g., Steps)
 Select a duration (e.g., week)
 The app generates a chart showing the daily steps taken throughout the selected duration and the average daily steps.  
+
 ### Notifications & reminders
 ### How to turn on notifications
 On the main screen, tap Settings.
@@ -102,15 +102,14 @@ Select FitTrack Mini from the Notification Style section.
 Toggle the switch next to Allow Notifications. 
 The app will send notifications to your home screen based on your preferred selection.
 
-
 ### Troubleshooting
 ### What to do if the step counting does not work.
 On the main screen, tap Settings.
 Select Access.
 Toggle the switch next to Allow Motion Sensors Access. 
 Make sure the access is also enabled in your phone settings. 
-## API Documentation for FitTrack Mini
 
+## API Documentation
 ### Create a Goal 
 **Endpoint**
 `POST /goals` 
