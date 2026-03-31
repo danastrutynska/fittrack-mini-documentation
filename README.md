@@ -1,2 +1,2 @@
 # fittrack-mini-documentation
-Documentation for FitTrack Mini
+# This repository contains user and API documentation for a fitness tracking application.
