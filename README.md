@@ -113,9 +113,9 @@ Make sure the access is also enabled in your phone settings.
 
 ## Create a Goal 
 **Endpoint**
-POST /goals 
+`POST /goals` 
 **Description**
-Creates a new goal 
+`Creates a new goal` 
 **Request Body**
 ```json
 { 
@@ -125,8 +125,8 @@ Creates a new goal
  }
 ```
 **Response**
-```json
 201 Created 
+```json
 { 
 "id":1, 
 "name": "burn 200 calories", 
@@ -136,12 +136,12 @@ Creates a new goal
 ```
 ## Get All Goals
 **Endpoint**
-GET /goals
+`GET /goals`
 **Description** 
-Returns a list of all goals
+`Returns a list of all goals`
 **Response**
-```json
 200 OK
+```json
 [
  {
    "id": 1,
@@ -157,9 +157,9 @@ Returns a list of all goals
 ```
 ## Update a Goal 
 **Endpoint**
-PUT /goals/{id}
+`PUT /goals/{id}`
 **Description** 
-Updates an existing goal 
+`Updates an existing goal` 
 **Request Body** 
 |Field|Type|Required|Description|
 |name|string|yes|name of the goal|
@@ -173,9 +173,9 @@ Updates an existing goal
 "duration": "weekly"
  }
 ```
-**Response** 
-```json
+**Response**
 200 OK
+```json
 { 
 "id":1, 
 "name": "power lifting", 
@@ -188,4 +188,3 @@ Updates an existing goal
 |400|Invalid request data|
 |404|Goal was not found|
 |401|Unauthorized|
-
