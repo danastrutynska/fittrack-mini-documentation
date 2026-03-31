@@ -155,19 +155,25 @@ Make sure the access is also enabled in your phone settings.
 ]
 ```
 ### Update a Goal 
+
 **Endpoint**
+
 `PUT /goals/{id}`
 
 **Description** 
+
 `Updates an existing goal`
 
 **Request Body** 
-|Field|Type|Required|Description|
-|name|string|yes|name of the goal|
-|target|number|yes|target in calories or steps|
-|duration|string|yes|goal duration|
+
+| Field   | Type   | Required | Description                  |
+|--------|--------|----------|------------------------------|
+| name   | string | yes      | Name of the goal             |
+| target | number | yes      | Target in calories or steps  |
+| duration | string | yes   | Goal duration                |
 
 **Example Request** 
+
 ```json
 { 
 "name": "power lifting",
@@ -177,7 +183,9 @@ Make sure the access is also enabled in your phone settings.
 ```
 
 **Response**
+
 200 OK
+
 ```json
 { 
 "id":1, 
@@ -188,7 +196,9 @@ Make sure the access is also enabled in your phone settings.
 ```
 
 **Possible Errors**
+
 |Code|Description|
+|--------|--------|
 |400|Invalid request data|
 |404|Goal was not found|
 |401|Unauthorized|
