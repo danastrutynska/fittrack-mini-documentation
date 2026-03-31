@@ -251,3 +251,67 @@ Make sure the access is also enabled in your phone settings.
 |400|Invalid request data|
 |404|Goal was not found|
 |401|Unauthorized|
+
+### Delete a Goal
+
+**Endpoint**
+
+`DELETE /goals/{id}`
+
+**Description**
+
+`Deletes a goal by ID.`
+
+**Response**
+
+204 No content
+
+**Possible errors**
+
+|Code|Description|
+|--------|--------|
+|404|Goal not found|
+|401|Unauthorized|
+
+### Get goals with filtering
+
+**Endpoint**
+
+`GET /goals?type=calories&limit=3`
+
+**Description**
+
+`Returns a list of goals filtered by type and limited by the specified number.`
+
+**Response**
+
+```json
+{
+ [
+  {
+    "id" : 1,
+    "name" : "weight lifting",
+    "type : "calories"
+   },
+   {
+    "id" : 5,
+    "name" : "yoga",
+    "type : "calories"
+   },
+   {
+    "id" : 15,
+    "name" : "pilates",
+    "type : "calories"
+   },
+  ]
+}
+````
+
+**Possible errors**
+
+|Code|Description|
+|--------|--------|
+|400|Invalid parameters|
+|401|Unauthorized|
+
+
