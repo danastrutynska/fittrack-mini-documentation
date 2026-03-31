@@ -158,8 +158,10 @@ Make sure the access is also enabled in your phone settings.
 ### Update a Goal 
 **Endpoint**
 `PUT /goals/{id}`
+---
 **Description** 
 `Updates an existing goal` 
+---
 **Request Body** 
 |Field|Type|Required|Description|
 |name|string|yes|name of the goal|
