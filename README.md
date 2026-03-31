@@ -157,15 +157,16 @@ Make sure the access is also enabled in your phone settings.
 ### Update a Goal 
 **Endpoint**
 `PUT /goals/{id}`
----
+
 **Description** 
-`Updates an existing goal` 
----
+`Updates an existing goal`
+
 **Request Body** 
 |Field|Type|Required|Description|
 |name|string|yes|name of the goal|
 |target|number|yes|target in calories or steps|
 |duration|string|yes|goal duration|
+
 **Example Request** 
 ```json
 { 
@@ -174,6 +175,7 @@ Make sure the access is also enabled in your phone settings.
 "duration": "weekly"
  }
 ```
+
 **Response**
 200 OK
 ```json
@@ -184,6 +186,7 @@ Make sure the access is also enabled in your phone settings.
 "duration": "weekly"
 }
 ```
+
 **Possible Errors**
 |Code|Description|
 |400|Invalid request data|
