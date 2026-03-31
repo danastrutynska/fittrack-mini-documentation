@@ -156,9 +156,9 @@ Make sure the access is also enabled in your phone settings.
 
 ```json
 { 
-"name": "burn 200 calories",
-"type": "power lifting",
-"duration": 60
+ "name": "burn 200 calories",
+ "type": "power lifting",
+ "duration": 60
  }
 ```
 
@@ -168,10 +168,10 @@ Make sure the access is also enabled in your phone settings.
 
 ```json
 { 
-"id":1, 
-"name": "burn 200 calories", 
-"type": "power lifting",
-"duration": 60
+ "id": 1, 
+ "name": "burn 200 calories", 
+ "type": "power lifting",
+ "duration": 60
 }
 ```
 ### Get All Goals
@@ -196,7 +196,7 @@ Make sure the access is also enabled in your phone settings.
    "calories": 200
  },
 {
-"id": 2,
+   "id": 2,
    "name": "yoga",
    "calories": 150
 }
@@ -225,9 +225,9 @@ Make sure the access is also enabled in your phone settings.
 
 ```json
 { 
-"name": "power lifting",
-"target": 200,
-"duration": "weekly"
+ "name": "power lifting",
+ "target": 200,
+ "duration": "weekly"
  }
 ```
 
@@ -237,10 +237,10 @@ Make sure the access is also enabled in your phone settings.
 
 ```json
 { 
-"id":1, 
-"name": "power lifting", 
-"target": 200,
-"duration": "weekly"
+ "id": 1, 
+ "name": "power lifting", 
+ "target": 200,
+ "duration": "weekly"
 }
 ```
 
