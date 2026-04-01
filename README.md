@@ -314,4 +314,76 @@ Make sure the access is also enabled in your phone settings.
 |400|Invalid parameters|
 |401|Unauthorized|
 
+### Create Workout Session 
 
+**Endpoint**
+
+`POST /workout-sessions`
+
+**Description**
+
+`Creates a workout session with a list of exercises` 
+
+**Request Body**
+
+```json
+{
+ "userId": 5,
+ "sessionName": "Sunday workout",
+ "duration": 60,
+ "type" : "weight lifting",
+ "exercises" :  [
+ {
+   "name": "squats",
+   "reps": 15
+ },
+ {
+   "name": "push-ups",
+   "reps": 10
+ }
+]
+}
+```
+
+**Validation Rules**
+
+- Session name must not be empty.
+- Duration must be greater than 0.
+- Type must be selected from the list: yoga, strength, cardio.
+- Exercise name must not be empty.
+- Exercise reps must be greater than 0.
+
+**Response**
+
+201 Created
+
+```json
+{
+ "workoutId" : 1,
+ "userId": 5,
+ "sessionName": "Sunday workout",
+ "duration": 60,
+ "type" : "weight lifting",
+ "exercises" :  [
+ {
+   "name": "squats",
+   "reps": 15
+ },
+ {
+   "name": "push-ups",
+   "reps": 10
+ }
+],
+ "caloriesBurned" : 400
+}
+```
+
+**Errors**
+
+|Code|Description|
+|--------|--------|
+|400|Invalid parameters|
+|400|Duration must be greater than 0|
+|400|Exercises must not be empty|
+|400|Workout type must be selected|
+|401|Unauthorized|
